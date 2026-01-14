@@ -43,7 +43,7 @@ const ScoreDisplay: React.FC<ScoreDisplayProps> = ({
   const displayScore = isCriticalFailed ? 0 : score;
 
   return (
-    <div className="sticky top-0 z-10">
+    <div className="sticky top-15 z-50">
       <div className={`bg-slate-900 border-2 border-emerald-400 rounded-lg p-6 ${percentage >= 100 ? 'bg-gradient-to-r from-emerald-900/20 to-cyan-900/20' : ''}`}>
         {/* Critical Failure Alert */}
         {isCriticalFailed && (
@@ -56,7 +56,7 @@ const ScoreDisplay: React.FC<ScoreDisplayProps> = ({
         {/* Score Display */}
         <div className="flex items-baseline justify-between mb-4">
           <span className={`text-5xl font-bold font-mono ${scoreColor} ${glowClass}`}>
-            {displayScore}
+            {displayScore.toFixed(2)}
           </span>
           <span className="text-3xl text-slate-500 font-mono">
             / {maxScore}

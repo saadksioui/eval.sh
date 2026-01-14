@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           {/* Row 2 */}
           <p className="flex flex-wrap items-center justify-center gap-2">
             <a
-              href="https://github.com/thereal1saad/eval.sh"
+              href="https://github.com/saadksioui/eval.sh"
               target="_blank"
               rel="noopener noreferrer"
               className="text-cyan-400 hover:text-cyan-300 underline flex items-center gap-1"
